@@ -1,0 +1,141 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "naming_series:",
+ "creation": "2023-03-07 13:24:49.182075",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "naming_series",
+  "supplier",
+  "column_break_43ke",
+  "transaction_date",
+  "item_search_section",
+  "search_group",
+  "search_template",
+  "search_category",
+  "column_break_znpq",
+  "search_model",
+  "search_color",
+  "add",
+  "section_break_gxl9",
+  "showroom_car_item",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "naming_series",
+   "fieldtype": "Select",
+   "label": "Naming Series",
+   "options": "SRC.-.DD.-.MM.-.YY.-.###",
+   "reqd": 1
+  },
+  {
+   "fieldname": "supplier",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Supplier",
+   "options": "Supplier"
+  },
+  {
+   "fieldname": "column_break_43ke",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Today",
+   "fieldname": "transaction_date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Transaction Date",
+   "reqd": 1
+  },
+  {
+   "fieldname": "item_search_section",
+   "fieldtype": "Section Break",
+   "label": "Item Search"
+  },
+  {
+   "fieldname": "search_group",
+   "fieldtype": "Link",
+   "label": "Group",
+   "options": "Item Group"
+  },
+  {
+   "fieldname": "search_template",
+   "fieldtype": "Select",
+   "label": "Brand"
+  },
+  {
+   "fieldname": "search_category",
+   "fieldtype": "Select",
+   "label": "Category"
+  },
+  {
+   "fieldname": "column_break_znpq",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "search_model",
+   "fieldtype": "Select",
+   "label": "Model"
+  },
+  {
+   "fieldname": "search_color",
+   "fieldtype": "Select",
+   "label": "Color"
+  },
+  {
+   "fieldname": "add",
+   "fieldtype": "Button",
+   "label": "Add Item"
+  },
+  {
+   "fieldname": "section_break_gxl9",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "showroom_car_item",
+   "fieldtype": "Table",
+   "label": "Item",
+   "options": "Showroom Car Item",
+   "reqd": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "options": "Showroom Car",
+   "print_hide": 1,
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2023-03-07 15:05:12.230824",
+ "modified_by": "Administrator",
+ "module": "Automobile Sales",
+ "name": "Showroom Car",
+ "naming_rule": "By \"Naming Series\" field",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
